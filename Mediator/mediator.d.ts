@@ -1,8 +1,6 @@
 export interface AirTransport {
-  pilotsName: string;
-  type: string;
   runway: Mediator;
-  runwayLog: string[];
+  receive(sender: AirTransport, message: string): void;
 }
 
 export interface Mediator {
